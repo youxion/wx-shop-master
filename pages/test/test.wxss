@@ -1,0 +1,49 @@
+/* pages/test/test.wxss */
+
+.box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+} 
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rpx;
+  height: 50rpx;
+}
+.borRed {
+  border-left: 2rpx solid red;
+
+}
+.scrollBox {
+  height: 100vh;
+}
+.left {
+  background: #ccc;
+  width: 20%;
+  /* height: 2000rpx; */
+}
+.navText {
+  position: relative;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+  /* border-left: 2rpx solid red; */
+  text-align: center;
+}
+.rht {
+  background: cyan;
+  width: 80%;
+}
+.box .left .scrollBox .active {
+  color: red
+}
+.testBtn {
+  height: 50rpx;
+}
+
+ 

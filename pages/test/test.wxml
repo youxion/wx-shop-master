@@ -1,0 +1,31 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+
+<view class="box">
+  <view class="left" bindtap="navClicked">
+    <scroll-view class="scrollBox" 
+      scroll-y="true" 
+      enhanced="true"
+      show-scrollbar="true">
+      <view wx:for="{{arr2}}" wx:key="*this" 
+        data-wang="888888"
+        data-dddd="9999"
+        data-ff="{{index}}"
+        class="navText active">
+        <!-- 注意：这里不要控制元素显示隐藏（用hidden和wx:if无效果），要控制样式显示隐藏 -->
+        <text class="line {{item.showTrue? 'borRed' : '' }}"></text> 
+          {{index}}{{item}}
+      </view>  
+        <!-- {{showTrue ? borRed : '' }} -->
+    </scroll-view>  
+  </view>
+  <view class="rht">
+  right
+  </view>
+
+  <button class="testBtn" size="mini" type="primary" bindtap="test">点击授权
+</button>
+
+</view> 
+
